@@ -4,12 +4,9 @@ import Button from './Button'
 function App() {
 
   return (
-    <main>
-      <div className='bg-blue-200'>
-        Hello World
-      </div>
+    <main className='flex w-screen h-screen justify-center items-center'>
       <div>
-        <Button variant="primary" className=''>Wazzap</Button>
+        <Button variant="primary" className=''>Hello World</Button>
       </div>
     </main>
   )
