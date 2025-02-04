@@ -4,7 +4,7 @@ import { cva, VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
   // Base class string that applies to all variants
-  "px-7 py-2 rounded-2xl",
+  "px-7 py-2 rounded-2xl cursor-pointer ",
   {
     // default variants define the default values for each variant. MUST BE ADDED FOR EVERY VARIANT
     defaultVariants: {
@@ -31,9 +31,18 @@ interface ButtonProps
   // insert any additional props here
 }
 
-export const Button = ({ className, ref, ...rest }: ButtonProps): JSX.Element => {
+
+
+/**
+ * Description placeholder
+ *
+ * @param {ButtonProps} props 
+ * @returns {JSX.Element} 
+ */
+export const Button = (props: ButtonProps): JSX.Element => {
+  const { className, ref, ...rest } = props;
   return (
-    <button className={cn(buttonVariants(rest), className)} ref={ref} {...rest} />
+    <button className={cn(buttonVariants(rest), "", className)} ref={ref} {...rest} />
   );
 };
 
