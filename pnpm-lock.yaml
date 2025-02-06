@@ -31,6 +31,12 @@ devDependencies:
   '@storybook/blocks':
     specifier: ^8.5.3
     version: 8.5.3(react-dom@19.0.0)(react@19.0.0)(storybook@8.5.3)
+  '@storybook/manager-api':
+    specifier: ^8.5.3
+    version: 8.5.3(storybook@8.5.3)
+  '@storybook/preview-api':
+    specifier: ^8.5.3
+    version: 8.5.3(storybook@8.5.3)
   '@storybook/react':
     specifier: ^8.5.3
     version: 8.5.3(@storybook/test@8.5.3)(react-dom@19.0.0)(react@19.0.0)(storybook@8.5.3)(typescript@5.6.3)
